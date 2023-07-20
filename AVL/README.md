@@ -32,6 +32,6 @@ Each line of the input file will be of the following two forms:
     or
     r <STRING1> <STRING2>
 
-The first line above means insert the string into your data structure. If the string is already present, do not insert again. Each word should only appear once in the data structure.
+The first line above means insert the string into your data structure. If the string is already present, it does not insert again. Each word only appears once in the data structure.
 
-The second line above means: count the number of strings (currently stored) that are lexicographically between STRING1 and STRING2. In other words, we want the number of all strings STR such that STRING1 ≤ STR ≤ STRING2, where comparison is lexicographic. This number, also called the range size, should be printed in the output file, in a separate line. You can assume that STRING1 < STRING2.
+The second line above means: count the number of strings (currently stored) that are lexicographically between STRING1 and STRING2. In other words, we want the number of all strings STR such that STRING1 ≤ STR ≤ STRING2, where comparison is lexicographic. This number, also called the range size, is printed to the output file, in a separate line. Assume that STRING1 < STRING2.
