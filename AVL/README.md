@@ -22,6 +22,8 @@ This project involves designing a fast data structure in C/C++ to perform insert
 
 🔹Useage🔹
 ---------------------------------------------------------------------------------
+Download all files to same directory.
+
 Input file:
 
 Each line of the input file will be of the following two forms: 
