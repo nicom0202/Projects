@@ -1,10 +1,3 @@
-//
-//  AVL.hpp
-//  AVL
-//
-//  Created by Nico Martinez on 11/3/22.
-//
-
 #ifndef AVL_hpp
 #define AVL_hpp
 
@@ -18,7 +11,7 @@ class Node{
   public:
     int height;
     int subtree_size;
-    int key;
+    string key;
     Node* parent;
     Node* left;
     Node* right;
@@ -38,27 +31,27 @@ class AVL{
     
     public:
         AVL();
-        Node* find(int);
-        int range(int, int);
-        int range(Node*, int, int);
-        int range_only_low(Node*,int);
-        int range_only_high(Node*,int);
+
         string printPreOrder();
         string printPreOrder(Node*);
-        Node* insert(int);
-        Node* insert(Node*,Node*, int);
+
+        Node* insert(string);
+        Node* insert(Node*,Node*, string);
+
         int subtree_size_update(Node*);
+
         Node* right_rotate(Node*);
         Node* left_rotate(Node*);
+
         int update_height(Node*);
         
-        int range_queue(int,int);
-        
-        int getCount(int,int);
-        int getCount(Node*,int,int);
+        int range_queue(string,string);
 
-    
-    
+        int range3(string, string);
+        int range3(Node*,string,string);
+        int range_only_low3(Node*,string,int);
+        int range_only_high3(Node*,string,int);
 };
 
 #endif
+

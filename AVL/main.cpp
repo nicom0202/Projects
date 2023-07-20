@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include "AVL.hpp"
 #include <stdexcept>
@@ -6,17 +5,18 @@
 #include <algorithm>
 #include <sstream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
 int main(int argc, char** argv){
   
-
   ifstream input;
   ofstream output;
 
-  input.open("simple-intput.txt");
-  output.open("test-output.txt");
+
+  input.open("input");
+  output.open("output");
 
   AVL myAVL;
   string line;
@@ -28,8 +28,7 @@ int main(int argc, char** argv){
         //do insert here
         std::size_t found = line.find_first_of(" ");
         line.erase(line.begin(), line.begin()+found+1); //now line only contains the number
-        int num = stoi(line);
-        myAVL.insert(num);
+        myAVL.insert(line);
         line.erase();
         continue;
       }
@@ -40,18 +39,16 @@ int main(int argc, char** argv){
 
         //find lower range
         found = line.find_first_of(" ");
-        string s_low = line.substr(0,found);
-        int low = stoi(s_low);
+        string low = line.substr(0,found);
 
         //now delete lower range
         line.erase(line.begin(), line.begin()+found+1);
 
         //now line only contains the last number
-        int high = stoi(line);
+        string high = line;
 
         //now call range
-        output << myAVL.range_queue(low, high) << endl;
-        
+        output << myAVL.range3(low, high) << endl;
       }
     }
   }
@@ -59,7 +56,31 @@ int main(int argc, char** argv){
     cout << "<INPUT FILE> does not exist" << endl;
   }
 
-
-  input.close();
   output.close();
+    
+
+    ifstream correct;
+    ifstream output_results;
+    
+    correct.open("more-input-correct-results.txt");
+    output_results.open("output");
+    
+    string line2;
+    string line3;
+
+    vector<int> v;
+    int count = 1;
+    
+    while(!correct.eof() || !output_results.eof()){
+        getline(correct, line2);
+        getline(output_results,line3);
+        if(line2 != line3){
+            v.push_back(count);
+        }
+        count += 1;
+    }
+    
+    cout << v.size() << endl;
+    
 }
+
