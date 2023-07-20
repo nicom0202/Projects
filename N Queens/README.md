@@ -4,7 +4,7 @@
 
 🔹Overview🔹
 ---------------------------------------------------------------------------------
-The objective of this assignment is to solve the n-queens problem, which involves placing n queens on an n × n chessboard such that no two queens attack each other. However, there is a twist in this assignment. Instead of placing all queens from scratch, the code takes as input the positions of some queens already placed on the chessboard. The task is to place the remaining queens without any attacks. The chessboard is indexed starting from 1, and the queens' positions are given in standard (x, y) coordinates.
+The objective of this project is to solve the n-queens problem, which involves placing n queens on an n × n chessboard such that no two queens attack each other. However, there is a twist in this assignment. Instead of placing all queens from scratch, the code takes as input the positions of some queens already placed on the chessboard. The task is to place the remaining queens without any attacks. The chessboard is indexed starting from 1, and the queens' positions are given in standard (x, y) coordinates.
 
 🔹Installation🔹
 ---------------------------------------------------------------------------------
