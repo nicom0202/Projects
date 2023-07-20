@@ -15,7 +15,7 @@ This project involves designing a fast data structure in C/C++ to perform insert
 (3) Link Object Files:
     g++ main.o AVL.o -o my_program
 (4) Run Executable:
-    ./my_program
+    ./my_program input
 
 🔴Useage🔴
 ---------------------------------------------------------------------------------
