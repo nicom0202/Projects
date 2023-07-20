@@ -17,7 +17,7 @@ The objective of this project is to solve the n-queens problem, which involves p
         g++ main.o -o my_program
     
     (4) Run Executable:
-        ./my_program input
+        ./my_program 
 
 🔹Useage🔹
 ---------------------------------------------------------------------------------
