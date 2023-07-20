@@ -1,12 +1,12 @@
-# AVL 
+# 🔴 AVL 🔴
 
 ## Fast Data Structure for Text Insertions and Range Queries
 
-🔴Overview🔴
+🔹Overview🔹
 ---------------------------------------------------------------------------------
 This project involves designing a fast data structure in C/C++ to perform insertions and range queries on text. The input file contains a long list of words to insert (i), interspersed with range queries (r). The goal is to efficiently find the number of words lexicographically between two given strings.
 
-🔴Installation🔴
+🔹Installation🔹
 ---------------------------------------------------------------------------------
     (1) Make sure your system has a C++ compiler 
 
@@ -20,7 +20,7 @@ This project involves designing a fast data structure in C/C++ to perform insert
     (4) Run Executable:
         ./my_program input
 
-🔴Useage🔴
+🔹Useage🔹
 ---------------------------------------------------------------------------------
 Input file:
 
