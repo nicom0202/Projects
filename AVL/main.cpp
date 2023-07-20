@@ -58,29 +58,7 @@ int main(int argc, char** argv){
 
   output.close();
     
-
-    ifstream correct;
-    ifstream output_results;
-    
-    correct.open("more-input-correct-results.txt");
-    output_results.open("output");
-    
-    string line2;
-    string line3;
-
-    vector<int> v;
-    int count = 1;
-    
-    while(!correct.eof() || !output_results.eof()){
-        getline(correct, line2);
-        getline(output_results,line3);
-        if(line2 != line3){
-            v.push_back(count);
-        }
-        count += 1;
-    }
-    
-    cout << v.size() << endl;
+  return 0;
     
 }
 
