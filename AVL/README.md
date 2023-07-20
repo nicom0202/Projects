@@ -8,14 +8,14 @@ This project involves designing a fast data structure in C/C++ to perform insert
 
 🔴Installation🔴
 ---------------------------------------------------------------------------------
-(1) Make sure your system has a C++ compiler 
-(2) Compile code: 
-    g++ -c main.cpp -o main.o
-    g++ -c AVL.cpp -o AVL.o
-(3) Link Object Files:
-    g++ main.o AVL.o -o my_program
-(4) Run Executable:
-    ./my_program input
+    (1) Make sure your system has a C++ compiler 
+    (2) Compile code: 
+        g++ -c main.cpp -o main.o
+        g++ -c AVL.cpp -o AVL.o
+    (3) Link Object Files:
+        g++ main.o AVL.o -o my_program
+    (4) Run Executable:
+        ./my_program input
 
 🔴Useage🔴
 ---------------------------------------------------------------------------------
