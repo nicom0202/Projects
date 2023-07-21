@@ -19,7 +19,7 @@ The objective of this project is to solve the n-queens problem, which involves p
     (4) Run Executable:
         ./my_program 
 
-🔹Useage🔹
+🔹Usage🔹
 ---------------------------------------------------------------------------------
 Download all files to same directory.
 
