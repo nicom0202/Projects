@@ -20,7 +20,7 @@ This project involves designing a fast data structure in C/C++ to perform insert
     (4) Run Executable:
         ./my_program input
 
-🔹Useage🔹
+🔹Usage🔹
 ---------------------------------------------------------------------------------
 Download all files to same directory.
 
